@@ -10,7 +10,18 @@ class GfG
     	Node slow=head;
     	
     	int i=0;
-    	while(i<2){
+    	Node temp=head;
+    	int len=0;
+    	while(temp!=null){
+    	    temp=temp.next;
+    	    len++;
+    	}
+    	
+    	if(len<n){
+    	    return -1;
+    	}
+    	
+    	while(i<n){
     	    fast=fast.next;
     	    i++;
     	}

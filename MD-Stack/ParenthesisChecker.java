@@ -28,7 +28,8 @@ class Parenthesis
                 s.pop();
             }else if(c==')' && s.peek()=='('){
                 s.pop();
-            } 
+            }else{
+                return false;
                 
             }
             
